@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Dış CSS dosyasını sayfaya bağlar (genel tasarım stilleri) -->
+  <link rel="stylesheet" href="../style.css">
+  
+  <!-- Sekme simgesi (favicon) olarak gösterilecek küçük ikon -->
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+
+  <!-- Sayfa başlığı: Tarayıcı sekmesinde görünen isim -->
+  <title>Düzce</title>
+</head>
+<body>
+  <!-- Sayfa başlığı -->
+  <h1>Düzce</h1>
+
+  <!-- Tema değiştirme butonları: Arka plan rengini JS ile değiştirir -->
+  <button onclick="temaDegistir('#FFD1DC')">Pembe Tema</button>
+  <button onclick="temaDegistir('#FFD580')">Varsayılan Tema</button>
+
+  <!-- JavaScript dosyasını dahil eder (tema fonksiyonları burada yer alıyor) -->
+  <script src="../myscript.js"></script>
+
+  <!-- Şehre ait görsellerin bulunduğu galeri -->
+  <div class="image-gallery">
+    <img class="zoom" src="../img/duz1.jpeg" alt="Düzce Aydınpınar Şelalesi" width="400">
+    <img class="zoom" src="../img/duz2.jpeg" alt="Düzce Akçakoca" width="400">
+  </div>
+
+  <!-- Kısa şehir tanıtımı -->
+  <p>Düzce, Türkiye'nin Karadeniz Bölgesi'nde yer alır ve doğal güzellikleriyle ünlüdür. Şehir, yeşil doğası ve birçok şelalesiyle dikkat çeker.</p>
+
+  <!-- Gezilecek yerlerin listesi -->
+  <ul>
+    <li>Göller Yöresi</li>
+    <li>Samandere Şelalesi</li>
+    <li>Akçakoca Plajı</li>
+    <li>Merkez Cami</li>
+  </ul>
+
+  <!-- Tarih başlığı -->
+  <h3>DÜZCE TARİHİ</h3>
+
+  <!-- Şehrin tarihçesiyle ilgili detaylı bilgi -->
+  <p>
+    Düzce’nin bilinen tarihi M.Ö. 1390 yıllarına kadar gitmektedir. Yöre, birçok kavimin ve devletin istilasına maruz kalmıştır...  
+    <!-- (Paragraf devam ediyor, uzun tarih bilgisi içeriyor) -->
+  </p>
+
+  <!-- Alt gezinme menüsü: Diğer sayfalara bağlantı sağlar -->
+  <nav>
+    <a href="../index.html">Ana Sayfa</a> |
+    <a href="../sehiroyunu/sehir-oyunu.html">Şehir Tahmin Oyunu</a> |
+    <a href="../form/form.html">Form</a> |
+    <a href="../tablo/tablo.html">Tablo</a> |
+    <a href="../istanbul/istanbul.html">İstanbul</a> |
+    <a href="../antalya/antalya.html">Antalya</a> |
+    <a href="../bursa/bursa.html">Bursa</a> |
+    <a href="../izmir/izmir.html">İzmir</a> |
+    <a href="../kocaeli/kocaeli.html">Kocaeli</a>
+  </nav>
+</body>
+</html>
