@@ -1,167 +1,203 @@
+/* Genel body ayarları: yazı tipi, arka plan rengi, boşluklar ve yazı rengi */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFD580; /* açık turuncu ton */
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-  header {
-   background-color: #800000; /* Bordo */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(114, 4, 4, 0.1);
-  }
-  button{
-background-color: #0d8000; /* Yeşil */
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(2, 118, 31, 0.1);
+  font-family: Arial, sans-serif;
+  background-color: #FFD580; /* açık turuncu ton */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
 
-  }
-  h1, h2, h3 {
-    color: #800000;
-    text-align: center;
-  }
-  
-  main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  ul, ol {
-    padding-left: 40px;
-    line-height: 1.6;
-  }
-  
-  p {
-    line-height: 1.6;
-    text-align: justify;
-    padding: 0 10px;
-  }
-  
-  a {
-    color: #800000;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #ccc;
-    color: #333;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 40px;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  
-  }
-  .image-gallery {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    max-width: 500px;
-    margin: auto;
-  }
-  
-  input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    font-size: 1em;
-  }
-  
-  input[type="submit"] {
-    background-color: #800000;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #5a0000;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-  
-  table, th, td {
-    border: 1px solid #bbb;
-    text-align: center;
-  }
-  
-  th, td {
-    padding: 10px;
-  }
-  
-  th {
-    background-color: #800000;
-    color: white;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  nav {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  nav a {
-    margin: 0 10px;
-    color: #800000;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  .zoom:hover {
+/* Header (üst kısım) stilleri: arka plan rengi, yazı rengi, hizalama ve gölge */
+header {
+  background-color: #800000; /* Bordo */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(114, 4, 4, 0.1);
+}
+
+/* Buton stilleri: yeşil arka plan, beyaz yazı ve gölge efekti */
+button {
+  background-color: #0d8000; /* Yeşil */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(2, 118, 31, 0.1);
+}
+
+/* Başlıklar: bordo renk ve ortalanmış */
+h1, h2, h3 {
+  color: #800000;
+  text-align: center;
+}
+
+/* Ana içerik alanı: ortalanmış, gölgeli ve arka planlı kutu */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Liste öğeleri için boşluk ve satır aralığı */
+ul, ol {
+  padding-left: 40px;
+  line-height: 1.6;
+}
+
+/* Paragraflar: satır aralığı, iki yana yaslama ve kenar boşluk */
+p {
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+/* Bağlantılar için stil: bordo renk, kalın yazı, hover efekti */
+a {
+  color: #800000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer (alt kısım): gri arka plan, ortalanmış yazı, sabit yükseklik */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ccc;
+  color: #333;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Resimler: kutuya sığacak şekilde, ortalanmış ve gölgeli */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Resim galerisi: yatay hizalama ve sarma */
+.image-gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Form kutusu: arka plan, iç boşluk, kenarlık, ortalama */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Form öğeleri: genişlik, kenarlık, iç boşluk */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+/* Gönder butonu: bordo zemin, beyaz yazı, fare ile üzerine gelince koyulaşır */
+input[type="submit"] {
+  background-color: #800000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #5a0000;
+}
+
+/* Tablolar: tam genişlik, kenarlık, arka plan, gölge */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Tablo kenarlıkları ve ortalanmış içerik */
+table, th, td {
+  border: 1px solid #bbb;
+  text-align: center;
+}
+
+/* Tablo başlık ve hücre dolgusu */
+th, td {
+  padding: 10px;
+}
+
+/* Başlık hücreleri için bordo arka plan ve beyaz yazı */
+th {
+  background-color: #800000;
+  color: white;
+}
+
+/* Satır renk alternasyonu */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Navigasyon menüsü: ortalanmış bağlantılar */
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #800000;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sayfa içeriği için kutu: beyaz zemin, ortalama, iç boşluk, gölge */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover (üzerine gelince) efektli büyütme */
+.zoom:hover {
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+/* RESPONSIVE TASARIM: 768px altı ekranlar için özel ayarlar */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Menü elemanlarını alt alta diz */
+  }
+
+  table {
+    width: 100%; /* Tablolar dar ekranlarda da uyumlu */
+    font-size: 14px; /* Yazı boyutunu küçült */
+  }
 }
