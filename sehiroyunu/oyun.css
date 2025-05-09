@@ -1,34 +1,40 @@
 
+/* Sayfa arka planı ve genel yazı stili */
 body.oyun-body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #fefcea, #f1da36);
+  background: linear-gradient(to right, #fefcea, #f1da36); /* Sarı geçişli arka plan */
   color: #333;
   text-align: center;
   padding: 40px 20px;
   margin: 0;
 }
 
+/* Başlık stilleri */
 h1 {
   color: #333;
   margin-bottom: 10px;
 }
 
+/* Paragraf metin stili */
 p {
   font-size: 1.1em;
   color: #444;
 }
 
+/* Tahmin edilecek kelimenin görünümü */
 #kelime {
   font-size: 2em;
-  letter-spacing: 12px;
+  letter-spacing: 12px; /* Harfler arası boşluk */
   margin: 25px 0;
   font-weight: bold;
 }
 
+/* Harf giriş alanı bölümü */
 #harfAlani {
   margin: 20px 0;
 }
 
+/* Harf giriş kutusu stili */
 input[type="text"] {
   font-size: 1.5em;
   width: 50px;
@@ -41,10 +47,12 @@ input[type="text"] {
   transition: border-color 0.3s;
 }
 
+/* Giriş kutusuna odaklanıldığında kenarlık rengi */
 input[type="text"]:focus {
   border-color: #007acc;
 }
 
+/* Tüm butonlar için temel stil */
 button {
   font-size: 1em;
   padding: 10px 20px;
@@ -54,38 +62,45 @@ button {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
-  z-index: 10; /* Butonun üstte olduğundan emin olmak için z-index ekledik */
+  z-index: 10; /* Butonların üstte kalması için */
 }
 
+/* Buton üzerine gelindiğinde arka plan rengi değişir */
 button:hover {
   background-color: #005fa3;
 }
 
+/* Bilgilendirme metni */
 #bilgi {
   font-size: 1.2em;
   font-weight: bold;
   margin: 10px 0;
 }
 
+/* Tahmin edilen harflerin listelendiği alan */
 #harfler {
   font-size: 1.1em;
   color: #c62828;
   font-weight: bold;
 }
 
+/* Sonuç bölümü paragrafları */
 #sonuc p {
   font-size: 1.3em;
   margin: 20px 0;
 }
 
+/* Sonuç bölümündeki butonlar */
 #sonuc button {
   margin-top: 10px;
 }
 
+/* Navigasyon menüsü */
 nav {
   margin-top: 40px;
 }
 
+/* Menü bağlantıları */
 nav a {
   color: #333;
   margin: 0 10px;
@@ -94,7 +109,19 @@ nav a {
   transition: color 0.2s;
 }
 
+/* Menü bağlantısına hover yapılınca rengi değişir */
 nav a:hover {
   color: #007acc;
   text-decoration: underline;
+}
+
+/* Responsive tasarım için küçük ekran ayarları */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Menü dikey hale gelir */
+  }
+  table {
+    width: 100%;
+    font-size: 14px; /* Tablo metni küçülür */
+  }
 }
