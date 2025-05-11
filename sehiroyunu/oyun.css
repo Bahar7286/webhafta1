@@ -95,25 +95,22 @@ button:hover {
   margin-top: 10px;
 }
 
-/* Navigasyon menüsü */
+/* Navigasyon menüsü: ortalanmış bağlantılar */
 nav {
-  margin-top: 40px;
+  text-align: center;
+  margin: 20px 0;
 }
 
-/* Menü bağlantıları */
 nav a {
-  color: #333;
   margin: 0 10px;
-  text-decoration: none;
+  color: #800000;
   font-weight: bold;
-  transition: color 0.2s;
 }
 
-/* Menü bağlantısına hover yapılınca rengi değişir */
 nav a:hover {
-  color: #007acc;
   text-decoration: underline;
 }
+
 
 /* Responsive tasarım için küçük ekran ayarları */
 @media (max-width: 768px) {
